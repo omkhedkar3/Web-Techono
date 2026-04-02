@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <h1>User Registration Form</h1>
+
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+            <br><br>
+     first name: <input type="text" placeholder="chaman" required>
+    <br><br>
+    last name: <input type="text" placeholder="kumar">
+    <br><br>
+    date of birth: <input type="date">
+    <br><br>
+    Gender:
+    <br>
+    Male <input type="radio" name="a1">
+    <br>
+    Female <input type="radio" name="a1">
+    <br><br>
+    Upload photo: <input type="file">
+    <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Details</legend>
+
+    Email: <input type="email" placeholder="eg: 'abc@gmail.com'">
+    <br><br>
+    Phone number: <input type="tel" maxlength="10" pattern="[0-9]{10}" placeholder="Enter 10 digit phone number">
+    <br><br>
+    Address: <br> 
+    <textarea rows="5" cols="30" placeholder="Enter your address" required></textarea>
+ 
+    <br><br>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Account Details</legend>
+
+    Username: <input type="text" placeholder="Enter username" required>
+    <br><br>
+    Password: <input type="password" placeholder="Enter password" required>
+    <br><br>
+    Confirm Password: <input type="password" placeholder="Confirm password" required>
+    <br><br>
+    password must contain at least 8 characters, including uppercase, lowercase, 
+    number, and special character. <br><br>
+    password strength: <meter value="0.5" min="0" max="1">50%</meter> <br><br> 
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+        country: 
+        <select >
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="japan"> Japan</option>
+            </select>   
+            <br><br>
+
+            hobbies: <br>
+            <input type="checkbox" name="hobby" value="reading"> Reading <br>
+            <input type="checkbox" name="hobby" value="traveling"> Traveling <br>
+            <input type="checkbox" name="hobby" value="cooking"> Cooking <br>
+            <input type="checkbox" name="hobby" value="sports"> Sports <br>
+
+            favourite color: <input type="color">
+             <br><br>
+
+            experience level: <input type=" range" min="0" max="10" value="5">
+             <br><br>
+
+             
+    </fieldset>
+    <br><br>
+    Terms and Conditions: <br><input type="checkbox" required> I agree to the terms and conditions
+    <br><br>
+    <input type="submit" value="Register">  
+
+
+</body>
+
+</html>
